@@ -1,0 +1,13 @@
+<mat-card class="example-card"
+          appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>{{ book()?.name }}</mat-card-title>
+    <h4>{{ book()?.author }}</h4>
+  </mat-card-header>
+  <mat-card-content>
+    <p>{{ book()?.text }}</p>
+  </mat-card-content>
+  <mat-card-footer>
+    <div>Total pages: {{ book()?.pages }}</div>
+  </mat-card-footer>
+</mat-card>

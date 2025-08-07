@@ -1,0 +1,32 @@
+<h2 mat-dialog-title>Add new book</h2>
+<mat-dialog-content>
+  <form [formGroup]="form"
+       style="display: flex; flex-direction: column">
+    <label for="name">Name:</label>
+    <input id="name"
+           matInput
+           type="text"
+           formControlName="name" />
+    <label for="author">Author:</label>
+    <input id="author"
+           matInput
+           type="text"
+           formControlName="author" />
+    <label for="pages">Pages:</label>
+    <input id="pages"
+           matInput
+           min="1"
+           type="number"
+           formControlName="pages" />
+    <label for="text">Text:</label>
+    <input id="text"
+           matInput
+           type="text"
+           formControlName="text" />
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button matButton
+          (click)="onSubmit()">Add
+  </button>
+</mat-dialog-actions>

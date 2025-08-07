@@ -1,0 +1,9 @@
+<app-filters [(value)]="filterValue"/>
+@if (filteredBooks().length) {
+  <app-books-list [books]="filteredBooks()"
+                  (selectedBook)="onSelectedBook($event)"/>
+} @else {
+  <p>No books found</p>
+}
+<button matButton="filled"
+        (click)="onAdd()">Add book</button>

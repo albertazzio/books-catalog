@@ -1,0 +1,7 @@
+<ul class="books-list">
+  @for (book of books(); track book.id) {
+    <li class="books-list-item"(click)="selectedBook.emit(book)">
+      {{ book.name }}
+    </li>
+  }
+</ul>

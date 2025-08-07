@@ -1,0 +1,7 @@
+.books-list-item {
+  margin: 6px 0;
+  &:hover {
+    cursor: pointer;
+    color: var(--mat-sys-primary);
+  }
+}

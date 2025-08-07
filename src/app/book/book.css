@@ -1,0 +1,18 @@
+.example-card {
+  max-width: 400px;
+}
+
+mat-card-content {
+  max-height: 400px;
+  overflow: auto;
+}
+
+mat-card-header {
+  display: flex;
+  flex-direction: column;
+}
+
+mat-card-footer {
+  padding: 0 10px;
+  text-align: end;
+}
